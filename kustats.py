@@ -35,7 +35,7 @@ df = pd.DataFrame(KuStats.json()["data"], index=[0],
     'makerCoefficient',])
 
 # CSV - INCLUDE THESE COLUMNS ONLY:
-# df = df[["vol","averagePrice"]]
+df = df[["vol","averagePrice"]]
 
 # CSV - EXPORT
 df.to_csv(csv_name+'.csv', header=True, index=False)
